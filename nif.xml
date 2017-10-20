@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nifty xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://nifty-gui.lessvoid.com/nifty-gui" xsi:schemaLocation="https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd https://raw.githubusercontent.com/void256/nifty-gui/1.4/nifty-core/src/main/resources/nifty.xsd">
+    <useControls filename="nifty-default-controls.xml"/>
+    <useStyles filename="nifty-default-styles.xml"/>
+    <screen id="GScreen2">
+        <layer id="GLayer1" childLayout="absolute" backgroundImage="C:\Users\daniel\Desktop\nifterion\55998b3b94534744821517.jpg">
+            <control name="button" id="GButton1" childLayout="center" backgroundColor="#000066ff" x="351" y="506" label="AYUDA"/>
+            <control name="button" id="GButton2" childLayout="center" backgroundColor="#0099ccff" x="654" width="100px" y="138" label="CERRAR " height="23px"/>
+            <control name="button" id="GButton0" childLayout="center" backgroundColor="#cc0000ff" backgroundImage="button/button.png" x="112" y="135" label="INICIO"/>
+        </layer>
+    </screen>
+</nifty>
