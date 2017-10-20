@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nifty 
+    xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    
+    <useStyles filename="nifty-default-styles.xml" />
+    <useControls filename="nifty-default-controls.xml" />
+    
+    <screen id="startScreen" controller="mygame.Main">
+        <layer childLayout="center" backgroundColor="#00000000" >
+            <panel width="50%" height="70%" backgroundColor="#FFFFFF20" childLayout="vertical" >
+                <panel id="panelSup" width="100%" height="15%" childLayout="center" backgroundColor="#FFFFFF20">
+                    <text text="Tornar Brillante" color="#FFFFFFFF" font="Interface/Fonts/Default.fnt" width="100%" height="100%" />
+                    <effect>
+                        <onActive name="border" border="2px,2px,2px,2px" color="#aaaf,#aaaf,#aaaf,#aaaf" timeType="infinite"/>
+                    </effect>
+                    <interact onClick="opaco()"/>
+                </panel>
+                <panel width="100%" height="10%" backgroundColor="#00000000" childLayout="horizontal">
+                    <control name="button" id="bocultarverde" width="50%" height="96%" align="center" valign="center" label="Ocultar Verde" visibleToMouse="true" />
+                    <control name="button" id="bocultarazul" width="50%" height="96%" align="center" valign="center" label="Ocultar Azul" visibleToMouse="true" />
+                </panel>
+                <panel width="100%" height="50%" childLayout="center" backgroundColor="#00000000" />
+                <panel width="100%" height="10%" backgroundColor="#00000000" childLayout="horizontal">
+                    <control name="button" id="bmostrarverde" width="50%" height="96%" align="center" valign="center" label="Mostrar Verde" visibleToMouse="true" />
+                    <control name="button" id="bmostrarazul" width="50%" height="96%" align="center" valign="center" label="Mostrar Azul" visibleToMouse="true" />
+                </panel>
+                <panel id="panelInf" width="100%" height="15%" childLayout="center" backgroundColor="#FFFFFF20" >
+                    <text text="Tornar Opaco" color="#FFFFFF77" font="Interface/Fonts/Default.fnt" width="100%" height="100%" />
+                    <effect>
+                        <onActive name="border" border="2px,2px,2px,2px" color="#555f,#555f,#555f,#555f" timeType="infinite"/>
+                    </effect>
+                    <interact onClick="brillante()"/>
+                </panel>
+            </panel>
+        </layer>
+    </screen>
+
+</nifty>
